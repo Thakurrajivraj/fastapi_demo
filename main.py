@@ -11,3 +11,6 @@ def read_users(user:dict):
 @app.get("/users/{user_id}")
 def read_user(user_id: int):
     return {"user_id": user_id, "message": "User details retrieved successfully"}
+@app.get("/about")
+def read_about():
+    return {"message": "This is a simple FastAPI application."} 
